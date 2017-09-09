@@ -7,18 +7,15 @@
     "swagger2tf": "cli.js"
   },
   "scripts": {
-    "test": "jsderef schema.yml | swagger2tf"
+    "test": "jsderef schema.yml | node ./cli.js > schema.json.tf;"
   },
   "author": "Marcus Zanona <m@zanona.com>",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "jsderef": "github:zanona/jsderef#master"
+    "jsderef": "github:zanona/jschema-deref#master"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zanona/swagger2tf.git"
-  },
+  "repository": "git+https://github.com/zanona/swagger2tf.git",
   "keywords": [
     "swagger",
     "terraform",
